@@ -19,7 +19,6 @@
 <li><strong>Conta</strong>: nome de usuário, uma "tag" numérica (identificador), senha (guardada só como hash, nunca em texto puro) e, opcionalmente, nome de exibição e foto de perfil. Não pedimos e-mail nem telefone pra criar conta.</li>
 <li><strong>Conteúdo que você envia</strong>: mensagens de texto, fotos, áudios, vídeos, arquivos, localização, enquetes e afins, nos grupos/conversas de chat normal.</li>
 <li><strong>Metadados técnicos básicos</strong>: horário de mensagens, quem está em qual grupo/canal, status de entrega/leitura.</li>
-<li><strong>Chat secreto</strong>: o conteúdo é cifrado ponta a ponta (E2EE) no aparelho antes de sair — não conseguimos ler essas mensagens. Só existem, em texto legível, nos aparelhos das pessoas na conversa.</li>
 </ul>
 <p>Não coletamos localização em segundo plano, nem lista de contatos do telefone, nem dados de outros aplicativos.</p>
 
@@ -32,14 +31,12 @@
 <li>Mensagens de chat normal ficam no banco de dados do servidor até você (ou quem criou o grupo) apagar.</li>
 <li>Mensagens temporárias (quando ativadas numa conversa) são apagadas automaticamente do servidor depois do tempo configurado.</li>
 <li>Fazemos backup automático do banco (retenção de 14 dias), só pra recuperação em caso de falha técnica — não é um arquivo público nem acessível por terceiros.</li>
-<li>Mensagens do chat secreto nunca sobem ao servidor em texto legível; o histórico local fica só no seu aparelho, sob seu controle (apagar o app apaga esse histórico).</li>
 </ul>
 
 <h2>5. Segurança</h2>
 <ul>
 <li>Toda comunicação entre o app e o servidor usa HTTPS/WSS.</li>
 <li>Senhas são guardadas com hash (nunca texto puro).</li>
-<li>O chat secreto usa criptografia ponta a ponta de verdade.</li>
 </ul>
 <p>Nenhum sistema é 100% infalível; se identificarmos um incidente que exponha dados, avisaremos os usuários afetados.</p>
 
