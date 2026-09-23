@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exclusão de conta e dados — ArchChat</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Exclusão de conta e dados do ArchChat</h1>
+<p class="aviso"><strong>⚠️ RASCUNHO — ainda não revisado.</strong> Este texto foi escrito a partir do que o app faz de verdade hoje, mas precisa ser lido e aprovado antes de ser considerado oficial.</p>
+
+<h2>Como pedir a exclusão</h2>
+<p><strong>Direto no app (mais rápido):</strong> abra o ArchChat, vá em <strong>Config</strong> e toque em <strong>Excluir conta</strong> (botão vermelho, separado de "Sair da conta"). O app confirma que a ação é irreversível e pede sua senha atual antes de apagar — depois disso a conta e o acesso a ela deixam de existir na hora.</p>
+<p><strong>Sem acesso ao app</strong> (perdeu o aparelho, esqueceu a senha e não tem e-mail de recuperação cadastrado, etc.): mande um pedido pelo e-mail informado na ficha do app na Play Store, a partir do e-mail cadastrado na conta (ou informando usuário + o máximo de dados que conseguir pra confirmarmos que é você). Respondemos e concluímos a exclusão manualmente.</p>
+
+<h2>O que é apagado</h2>
+<ul>
+<li>Conta em si: nome de usuário, tag, senha (hash), nome de exibição, foto de perfil, e-mail e e-mail de segurança/alternativo cadastrados, chave Pix (se preenchida).</li>
+<li>Vínculos com conversas e grupos: sua participação em todo grupo/canal/DM é removida.</li>
+<li>Dados pessoais associados: bloqueios que você fez, reações que você deu, stories que você postou, tickets de suporte que você abriu.</li>
+<li>Qualquer sessão ativa (token de login) vira inválida imediatamente — quem estiver com o app aberto é desconectado sozinho.</li>
+</ul>
+
+<h2>O que pode continuar existindo</h2>
+<ul>
+<li><strong>Mensagens que você já mandou em conversas com outras pessoas</strong> continuam visíveis pro resto do grupo/conversa depois da sua conta ser apagada — do mesmo jeito que já acontece quando alguém sai ou é removido de um grupo. Elas deixam de estar associadas a uma conta sua ativa, mas o conteúdo em si não é retirado da conversa de terceiros.</li>
+<li><strong>Backup técnico do servidor</strong>: fazemos backup automático do banco só pra recuperação em caso de falha técnica, com retenção de até 14 dias. Dados apagados podem continuar existindo dentro desses backups até eles rotacionarem, mesmo já removidos do banco em uso — não são acessados nem usados por ninguém nesse meio tempo.</li>
+</ul>
+
+<h2>Prazo</h2>
+<p>Pelo app, a exclusão é imediata. Por e-mail, o prazo é o tempo de resposta de quem estiver acompanhando a caixa de suporte — normalmente poucos dias.</p>
+
+<footer><a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Utilização</a></footer>
+</body>
+</html>
