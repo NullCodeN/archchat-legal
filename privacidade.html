@@ -8,52 +8,126 @@
 </head>
 <body>
 <h1>Política de Privacidade do ArchChat</h1>
-<p><em>Última atualização: 22 de Setembro de 2026</em></p>
-
+<p><em>Última atualização: 13 de Outubro de 2026 (versão 26.1)</em></p>
 <h2>1. Quem somos</h2>
-<p>O ArchChat é um aplicativo de mensagens desenvolvido e operado de forma independente, sem envolvimento de terceiros na hospedagem dos seus dados.</p>
-
+<p>O ArchChat é um aplicativo de mensagens desenvolvido e operado de forma independente. Nosso
+servidor é próprio: mensagens, mídias e dados de conta ficam guardados nele, não em serviços de
+terceiros (exceções na seção 5).</p>
 <h2>2. Quais dados coletamos</h2>
+<p><strong>Conta</strong></p>
 <ul>
-<li><strong>Conta</strong>: nome de usuário, uma "tag" como identificador, senha e, opcionalmente, nome de exibição e foto de perfil. <strong>Não pedimos e-mail nem telefone pra criar conta.</strong></li>
-<li><strong>Metadados técnicos básicos</strong>: horário de mensagens, quem está em qual grupo/canal, status de entrega/leitura.</li>
+<li>Nome de usuário, tag, senha (guardada só como hash, nunca em texto puro), nome de exibição,
+  foto de perfil, banner e status/recado.</li>
+<li><strong>E-mail</strong> e, opcionalmente, um <strong>e-mail de recuperação</strong> — usados só pra verificar a conta e
+  recuperar senha/usuário. Não pedimos número de telefone.</li>
+<li>Data de criação da conta e horário em que você esteve online pela última vez.</li>
 </ul>
-<p>Não coletamos localização em segundo plano, nem lista de contatos do telefone, nem dados de outros aplicativos.</p>
-
-<h2>3. Como usamos esses dados</h2>
-<p>Só pra fazer o app funcionar: entregar mensagens, manter histórico de conversas, autenticar login, e fazer backup técnico pra não perder tudo em caso de falha no servidor.</p>
-<p><strong>Não vendemos, alugamos nem compartilhamos seus dados com terceiros.</strong> Não existe publicidade no ArchChat, então não há rastreamento pra fins de anúncio.</p>
-
-<h2>4. Onde ficam guardados e por quanto tempo</h2>
+<p><strong>Conteúdo que você envia</strong></p>
 <ul>
-<li>Mensagens de chat ficam no banco de dados do servidor até você (ou quem criou o grupo) apagar.</li>
-<li>Mensagens temporárias (quando ativadas numa conversa) são apagadas automaticamente do servidor depois do tempo configurado.</li>
+<li>Mensagens de texto, fotos, vídeos, áudios, arquivos (inclusive currículo, se você anexar numa
+  candidatura), figurinhas, GIFs, enquetes, stories e reações.</li>
+<li>Respostas a formulários, participação em cartelas/sorteios e registros de equipe (escala,
+  presença, atestados) — só dentro dos grupos onde essas ferramentas forem usadas.</li>
 </ul>
-
-<h2>5. Segurança</h2>
+<p><strong>Localização</strong></p>
 <ul>
-<li>Toda comunicação entre o app e o servidor usa HTTPS/WSS.</li>
-<li>Mensagens e mídias (foto, áudio, arquivo, vídeo) também são criptografadas em repouso no servidor, então se alguém invadir o servidor ou tiver acesso a um backup, os dados ficam ilegíveis sem a chave. Isso não é criptografia ponta-a-ponta: o servidor guarda a chave e consegue decifrar quando precisa, por exemplo pra revisar uma denúncia.</li>
-<li>Senhas são guardadas com hash (nunca texto puro).</li>
+<li><strong>Só quando você escolhe usar:</strong> ao enviar sua localização numa conversa, ao compartilhar
+  localização em tempo real (15 minutos, 1 hora ou 8 horas, à sua escolha; dá pra encerrar antes) ou ao
+  acionar o <strong>SOS</strong>, que envia sua localização pros contatos de emergência que você cadastrou.</li>
+<li>Não coletamos localização em segundo plano sem você ter ligado uma dessas funções.</li>
+<li>Anúncios e vagas do Marketplace usam só cidade/estado digitados por você, não GPS.</li>
 </ul>
-<p>Nenhum sistema é 100% infalível; então não recomendamos compartilhamento de dados pra outras pessoas (seja amigos, familiares ou cônjuge).</p>
-
-<h2>6. Denúncia e moderação</h2>
-<p>Denúncias de mensagem/usuário (feitas dentro do app) ficam guardadas com quem denunciou, o motivo e o que foi denunciado, para revisão manual.</p>
-
-<h2>7. Seus direitos</h2>
+<p><strong>Perfil profissional e Marketplace</strong> (opcional)</p>
 <ul>
-<li><strong>Excluir sua conta e seus dados</strong>: direto no app, em Config &gt; Excluir conta (autoatendimento, na hora), ou mediante solicitação por contato se você não tiver mais acesso ao app. Veja os detalhes completos — o que é apagado e o que pode continuar existindo — na <a href="exclusao-de-conta.html">página de exclusão de conta</a>.</li>
-<li><strong>Corrigir seus dados</strong>: nome de exibição e foto podem ser trocados a qualquer momento direto no app.</li>
-<li><strong>Bloquear outra pessoa</strong>: a qualquer momento, direto no app.</li>
+<li>Nome da empresa, categoria, descrição, endereço, horário, link, anúncios de produtos e vagas
+  que você publicar. Essas informações são <strong>públicas</strong> dentro do app.</li>
 </ul>
+<p><strong>Outros dados que você informa</strong></p>
+<ul>
+<li>Chave Pix (opcional, ver seção 7), contatos de emergência do SOS, respostas rápidas salvas,
+  itens cosméticos, plano e moedas (simulação — o app não processa pagamento nenhum).</li>
+</ul>
+<p><strong>Dados técnicos</strong></p>
+<ul>
+<li>Token de notificação (Firebase), status de entrega/leitura, quem está em qual grupo/canal.</li>
+<li>Endereço IP, usado só no momento da conexão pra limitar abuso (ex: tentativas de login).</li>
+<li>Relatórios de erro do app (mensagem do erro, versão do app e seu ID de usuário), pra
+  corrigirmos falhas.</li>
+</ul>
+<p><strong>O que NÃO coletamos:</strong> lista de contatos do telefone, localização em segundo plano sem sua
+ação, dados de outros aplicativos, identificadores de publicidade.</p>
+<h2>3. Permissões do aparelho</h2>
+<p>Cada permissão só é pedida quando você usa a função correspondente:</p>
+<ul>
+<li><strong>Câmera e microfone</strong>: tirar foto, gravar vídeo/áudio e fazer chamadas de voz/vídeo.</li>
+<li><strong>Fotos e mídia</strong>: escolher fotos e vídeos da galeria pra enviar.</li>
+<li><strong>Localização</strong>: enviar localização, localização em tempo real e SOS (ver seção 2).</li>
+<li><strong>Notificações</strong>: avisar de mensagens e chamadas novas. Chamadas recebidas podem abrir em
+  tela cheia, como uma ligação comum.</li>
+<li><strong>Biometria</strong>: desbloquear o app com digital/rosto. A biometria é verificada pelo próprio
+  Android — o ArchChat nunca recebe nem guarda sua digital ou rosto.</li>
+</ul>
+<h2>4. Como usamos esses dados</h2>
+<p>Só pra fazer o app funcionar: entregar mensagens e chamadas, manter histórico, autenticar
+login, recuperar conta, mostrar seu perfil pras pessoas com quem você conversa, moderar
+denúncias e corrigir erros.</p>
+<p><strong>Não vendemos, alugamos nem compartilhamos seus dados pra publicidade.</strong> Não existe anúncio no
+ArchChat e não há rastreamento pra fins de marketing.</p>
+<h2>5. Serviços de terceiros</h2>
+<p>Alguns serviços externos são usados só pra funções específicas:</p>
+<ul>
+<li><strong>Firebase Cloud Messaging (Google)</strong>: entrega as notificações. Pra mostrar a prévia na
+  notificação, o aviso passa pelo Google com o token do aparelho, o nome de quem enviou e o
+  texto (ou tipo de mídia) da mensagem. O Google só transporta esse aviso, sem usá-lo pra
+  publicidade.</li>
+<li><strong>Giphy</strong>: busca de GIFs. A busca passa pelo nosso servidor; ao escolher um GIF, o app baixa a
+  imagem direto do Giphy.</li>
+<li><strong>Provedor de e-mail (Gmail/SMTP)</strong>: envio de códigos de verificação e recuperação.</li>
+<li><strong>Google Play</strong>: instalação e atualização do app.</li>
+</ul>
+<p>Chamadas de voz/vídeo passam pelo nosso próprio servidor de chamadas, não por terceiros.</p>
+<h2>6. Onde ficam guardados e por quanto tempo</h2>
+<ul>
+<li>Mensagens e mídias ficam no servidor até você (ou quem administra o grupo) apagar.</li>
+<li>Mensagens temporárias (quando ativadas) são apagadas sozinhas depois do tempo configurado.</li>
+<li>Stories expiram sozinhos (exceto os que você salvar nos destaques).</li>
+<li>Vagas expiram na data definida; anúncios ficam até você remover.</li>
+<li>Backups técnicos do servidor ficam guardados por até <strong>14 dias</strong> e depois são apagados.</li>
+<li>Relatórios de erro são usados só pra encontrar e corrigir falhas.</li>
+</ul>
+<h2>7. Chave Pix</h2>
+<p>A chave Pix que você salva serve só como atalho pra enviar ela como texto num chat. <strong>O
+ArchChat não processa pagamento nenhum</strong> — a transação acontece no seu banco.</p>
+<h2>8. Segurança</h2>
+<ul>
+<li>Toda comunicação entre o app e o servidor usa HTTPS/WSS (criptografado).</li>
+<li>Mensagens e mídias são criptografadas em repouso no servidor (AES-256-GCM). Isso <strong>não</strong> é
+  criptografia ponta a ponta: o servidor guarda a chave e consegue decifrar quando necessário,
+  por exemplo pra revisar uma denúncia.</li>
+<li>Senhas e códigos de recuperação são guardados só como hash.</li>
+</ul>
+<p>Nenhum sistema é 100% infalível; não compartilhe sua senha com ninguém.</p>
+<h2>9. Denúncia e moderação</h2>
+<p>Denúncias de mensagem ou usuário ficam guardadas com quem denunciou, o motivo e o conteúdo
+denunciado, pra revisão manual.</p>
+<h2>10. Seus direitos</h2>
+<ul>
+<li><strong>Excluir sua conta</strong>: direto no app, em <strong>Config → Excluir conta</strong>. A exclusão é imediata.
+  Detalhes do que é apagado estão na página "Exclusão de conta e dados".</li>
+<li><strong>Acessar e corrigir seus dados</strong>: nome, foto, e-mail, status e demais dados do perfil podem
+  ser vistos e trocados a qualquer momento no app.</li>
+<li><strong>Bloquear e denunciar</strong> qualquer pessoa, a qualquer momento.</li>
+<li><strong>Revogar permissões</strong> nas configurações do Android, quando quiser.</li>
+<li>Pra qualquer pedido sobre seus dados (inclusive com base na LGPD), use o e-mail de contato
+  informado na página do app na Google Play.</li>
+</ul>
+<h2>11. Menores de idade</h2>
+<p>O ArchChat não é destinado a menores de 13 anos. Reforçamos a responsabilidade dos pais e
+responsáveis no acompanhamento do uso.</p>
+<h2>12. Mudanças nesta política</h2>
+<p>Podemos atualizar esta política conforme o app evolui. Mudanças relevantes serão avisadas
+dentro do próprio app, e a data no topo desta página será atualizada.</p>
 
-<h2>8. Menores de idade</h2>
-<p>O ArchChat não é destinado/recomendado a menores de 13 anos. Mas reforçamos a obrigação e responsabilidades de monitoramento dos pais.</p>
-
-<h2>9. Mudanças nesta política</h2>
-<p>Podemos atualizar esta política conforme o app evolui. Mudanças relevantes serão avisadas dentro do próprio app.</p>
-
-<footer><a href="termos.html">Termos de Utilização</a> · <a href="exclusao-de-conta.html">Exclusão de conta e dados</a></footer>
+<footer><a href="termos.html">Termos de Utilização</a> · <a href="exclusao-de-conta.html">Exclusão de conta e dados</a> · <a href="privacy.html">English</a></footer>
 </body>
 </html>
